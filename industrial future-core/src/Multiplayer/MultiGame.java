@@ -48,7 +48,6 @@ public class MultiGame extends ApplicationAdapter
 	private GameCamera camera;
 	private Batch batch;
 
-	private Texture img;
 	private BitmapFont bFPS, serverDebugInfo;
 	private String sFPSlog, stringServerDebugInfo;
 	
@@ -114,8 +113,6 @@ public class MultiGame extends ApplicationAdapter
 		batch = new SpriteBatch();
 		//camera = new GameCamera(1080, 720);
 		camera = new GameCamera(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
-		img = new Texture("image.png");
-		img.setFilter(TextureFilter.Nearest, TextureFilter.Nearest);
 		bFPS = new BitmapFont();
 		serverDebugInfo = new BitmapFont();
 		manager = new MainAssetsManager();

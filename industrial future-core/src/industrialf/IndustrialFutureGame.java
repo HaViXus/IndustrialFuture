@@ -20,8 +20,6 @@ import map.Map;
 
 public class IndustrialFutureGame extends ApplicationAdapter {
 	SpriteBatch batch;
-	Texture img;
-	Sprite player;
 	//OrthographicCamera camera;
 	float x, y;
 	double time;
@@ -35,17 +33,8 @@ public class IndustrialFutureGame extends ApplicationAdapter {
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		img = new Texture("badlogic.jpg");
-		img.setFilter(TextureFilter.Nearest, TextureFilter.Nearest);
 		
 		font = new BitmapFont();
-		
-		player = new Sprite(img);
-		x = 100;
-		y=100;
-		player.setPosition(x, y);
-		x=0;
-		
 
 		
 		camera = new GameCamera(320, 240, 512*16, 512*16);
